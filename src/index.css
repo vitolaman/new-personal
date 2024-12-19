@@ -35,7 +35,7 @@ img {
 
 ::selection {
   color: white;
-  background: #e6007a;
+  background: #fc008c;
 }
 
 .flair {
@@ -50,7 +50,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #e6007a;
+  background-color: #fc008c;
   /* display: inline-block; */
   mix-blend-mode: difference;
   z-index: 100;
@@ -68,7 +68,7 @@ img {
 
 /* Handle (thumb) of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: #e6007a;
+  background-color: #fc008c;
   border-radius: 6px;
 }
 

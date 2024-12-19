@@ -209,7 +209,7 @@ function App() {
           onClick={() => {
             handleScroll(aboutRef.current);
           }}
-          className="p-6 mt-8 bg-[#e60071] z-10 mix-blend-difference hover:mix-blend-normal hover:scale-110 transition-all duration-100"
+          className="p-6 mt-8 bg-[#fc008c] z-10 mix-blend-difference hover:mix-blend-normal hover:scale-110 transition-all duration-100"
         >
           <p className="flex flex-row">
             Learn More{" "}
