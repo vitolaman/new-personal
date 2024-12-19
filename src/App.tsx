@@ -189,19 +189,21 @@ function App() {
         </div>
         <TypeAnimation
           className="text-white text-center font-bold lg:flex hidden z-10 mix-blend-difference mb-8 px-8 w-3/4 ml-6"
-          sequence={["Hi there, Vito here.", 1000]}
+          sequence={["Hi there, \n Vito here.", 1000]}
           wrapper="span"
           speed={20}
           style={{ fontSize: "8em" }}
           repeat={0}
+          cursor={false}
         />
         <TypeAnimation
-          className="text-white text-center font-bold flex lg:hidden z-10 mix-blend-difference !leading-loose px-8 ml-2 mb-18"
-          sequence={["Hi there, Vito here.", 1000]}
+          className="text-white text-center font-bold flex lg:hidden z-10 mix-blend-difference !leading-loose px-8 mb-18"
+          sequence={["Hi there, \n Vito here.", 1000]}
           wrapper="span"
           speed={20}
           style={{ fontSize: "3em" }}
           repeat={0}
+          cursor={false}
         />
         <div
           onClick={() => {
