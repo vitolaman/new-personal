@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: clip;
+  font-family: "Space Mono", monospace;
+  cursor: none;
+}
+
+img {
+  max-width: 200% !important;
+}
+
+::selection {
+  color: white;
+  background: #e6007a;
+}
+
+.flair {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.flair--3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e6007a;
+  /* display: inline-block; */
+  mix-blend-mode: difference;
+  z-index: 100;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 12px;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #e6007a;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.scrollbar-track-y {
+  display: none !important;
+}
