@@ -11,6 +11,8 @@ function App() {
   const workRef = useRef(null);
   const projectRef = useRef(null);
   // const certifRef = useRef(null);
+
+  const [isHovered, setIsHovered] = useState(false);
   const [bgColor, setBgColor] = useState("rgb(0, 0, 0)");
   const [bgNavColor, setBgNavColor] = useState("rgba(0, 0, 0,0)");
 
@@ -72,7 +74,7 @@ function App() {
         );
 
         setBgColor(`rgb(${newColor[0]}, ${newColor[1]}, ${newColor[2]})`);
-        setBgNavColor(`rgba(230, 0, 140, 1)`);
+        setBgNavColor(`#fc008c`);
       }
     };
 
@@ -98,8 +100,12 @@ function App() {
     >
       <div className="flair flair--3 hidden md:block"></div>
       <div
-        style={{ backgroundColor: bgNavColor }}
-        className="fixed inset-0 h-12 hover:bg-[#fc008c] bg-black/0 text-white hover:text-black w-full z-20 transition-all duration-300 hidden lg:flex items-center justify-center gap-8 px-8"
+        style={{
+          backgroundColor: isHovered ? "#fc008c" : bgNavColor,
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className="fixed inset-0 h-12 !hover:bg-[#fc008c] text-white w-full z-20 transition-all duration-300 hidden lg:flex items-center justify-center gap-8 px-8"
       >
         <a
           onClick={() => {
@@ -229,15 +235,15 @@ function App() {
       >
         <img
           src="/line-1.png"
-          className="absolute top-[30%] right-0 w-full z-[-1]"
+          className="absolute top-[30%] right-0 w-full z-[1]"
         />
         <p
           data-aos="zoom-in-up"
-          className="text-white hover:text-black font-bold text-5xl lg:text-8xl hover:bg-[#fc008c] mix-blend-difference mb-8 mt-16"
+          className="z-10 text-white hover:text-black font-bold text-5xl lg:text-8xl hover:bg-[#fc008c] mix-blend-difference mb-8 mt-16"
         >
           About Me.
         </p>
-        <p data-aos="zoom-in-left" className="text-white text-xl lg:w-1/2">
+        <p data-aos="zoom-in-left" className="z-10 text-white text-xl lg:w-1/2">
           Hey, I’m{" "}
           <span className="text-[#fc008c] hover:text-white mix-blend-difference hover:bg-[#fc008c]">
             Vito Varian Laman
@@ -262,7 +268,7 @@ function App() {
       >
         <img
           src="/line-3.png"
-          className="absolute top-[30%] -right-0 lg:w-[40vw] w-[40vh] -rotate-12 opacity-80 z-[-1] lg:mt-48"
+          className="absolute top-[30%] -right-0 lg:w-[40vw] w-[40vh] -rotate-12 opacity-80 z-[1] lg:mt-48"
         />
         <p
           data-aos="fade-up"
@@ -426,7 +432,7 @@ function App() {
       >
         <img
           src="/line-2.png"
-          className="absolute top-[30%] lg:-right-10 right-0 opacity-80 z-[-1] !w-[120%]"
+          className="absolute top-[30%] lg:-right-10 right-0 opacity-80 z-[1] !w-[120%]"
         />
         <p
           data-aos="fade-zoom-in"
@@ -435,7 +441,7 @@ function App() {
         >
           Project.
         </p>
-        <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8 p-4 lg:p-16 lg:w-2/3">
+        <div className="z-10 flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8 p-4 lg:p-16 lg:w-2/3">
           <div
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
