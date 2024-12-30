@@ -111,7 +111,7 @@ function App() {
           onClick={() => {
             handleScroll(homeRef.current);
           }}
-          className="hover:text-white"
+          className="hover:text-black hover:tracking-wide hover:font-semibold cursor-pointer"
         >
           Home
         </a>
@@ -119,7 +119,7 @@ function App() {
           onClick={() => {
             handleScroll(aboutRef.current);
           }}
-          className="hover:text-white"
+          className="hover:text-black hover:tracking-wide hover:font-semibold cursor-pointer"
         >
           About me
         </a>
@@ -127,7 +127,7 @@ function App() {
           onClick={() => {
             handleScroll(workRef.current);
           }}
-          className="hover:text-white"
+          className="hover:text-black hover:tracking-wide hover:font-semibold cursor-pointer"
         >
           Work Experience
         </a>
@@ -135,13 +135,13 @@ function App() {
           onClick={() => {
             handleScroll(projectRef.current);
           }}
-          className="hover:text-white"
+          className="hover:text-black hover:tracking-wide hover:font-semibold cursor-pointer"
         >
           Projects
         </a>
         <a
           href="https://yslmcmzwo4n.typeform.com/to/htyrDVU8"
-          className="hover:text-white"
+          className="hover:text-black hover:tracking-wide hover:font-semibold cursor-pointer"
           target="_blank"
         >
           Contact
@@ -193,7 +193,7 @@ function App() {
           wrapper="span"
           speed={20}
           style={{ fontSize: "8em" }}
-          repeat={0}
+          repeat={3}
           cursor={false}
         />
         <TypeAnimation
