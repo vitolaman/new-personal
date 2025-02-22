@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-spring/web": "^9.7.5",
     "@types/aos": "^3.0.7",
+    "@types/node": "^22.13.5",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^12.4.7",
