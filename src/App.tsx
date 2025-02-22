@@ -119,7 +119,7 @@ function App() {
       <ClickSpark
         sparkColor="#fff"
         sparkSize={10}
-        sparkRadius={15}
+        sparkRadius={60}
         sparkCount={8}
         duration={400}
       >
